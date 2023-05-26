@@ -171,7 +171,7 @@ $tampil_data = mysqli_query($conn ,$data_tampil);
 
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n4">
 
-<img src="demo.jpg" class="img-thumbnail" alt="...">
+<img src="film23.jpg" class="img-thumbnail" alt="Darmaboy ">
 
 <div class="container">
   <h3 class="text-center">Absensi Pramuka Juantika</h3>

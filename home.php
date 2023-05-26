@@ -110,12 +110,6 @@ $tampil_data = mysqli_query($conn ,$data_tampil);
   <a href="pages/sign-in.php" class="dropdown-item border-radius-md">
     <span>Sign In</span>
   </a>
-  <a href="pages/reg-anti-user.php" class="dropdown-item border-radius-md">
-    <span>Register</span>
-  </a>
-  <a href="pages/sign-in.php" class="dropdown-item border-radius-md">
-    <span>Logout</span>
-  </a>
 </div>
    
         </li>
