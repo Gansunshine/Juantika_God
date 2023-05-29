@@ -9,7 +9,7 @@ $conn = mysqli_connect ($server, $user, $password, $database) or die ("Tidak ada
 <html>
 
     <head>
-        <title>Data Siswa</title>
+        <title>Juantika</title>
     </head>
 
     <body bgcolor="lightgrey">

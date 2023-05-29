@@ -44,9 +44,9 @@ $tampil_data = mysqli_query($conn ,$data_tampil);
                 <td align="center"><?php echo $data_siswa['kehadiran']; ?></td>
                 <td align="center"><?php echo $data_siswa['Jenis_Kelamin']; ?></td>
                 <td align="center"><?php echo $data_siswa['tang']; ?></td>
-                <th> <a href="Edit.php" style="color:blue; text-decoration:none;"> <strong> Edit </strong> </a></th>
+               <th> <a href="Edit.php" style="color:blue; text-decoration:none;"> <strong> Edit </strong> </a></th>
                 <th><a href="Delete.php" style="color:red; text-decoration:none;"> <strong> Delete </strong> </a></th>
-
+ 
             </tr>
             <?php endforeach ?>
         </table>
