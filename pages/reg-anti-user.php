@@ -10,7 +10,7 @@ if(isset($_POST['regis'])) {
 
 
     if($pass != $confir) {
-        echo "<script>alert('Maaf password beda');window.location='register.php';</script>";
+        echo "<script>alert('Maaf pastikan password sama');window.location='register.php';</script>";
     } 
     $sql = mysqli_query($conn, "INSERT INTO tb_user(user,nis,pass)VALUES('$user', '$nisn', '$confir')");
 

@@ -14,7 +14,7 @@
         <tr>
             <th>Nama Peminjam</th>
             <th>Kelas - Jurusan</th>
-            <th>Nama Barang</th>
+            <th>Kode Barang</th>
             <th>Waktu Peminjaman</th>
             <th>Tanggal Peminjaman</th>
             <th>Jumlah Dipinjam</th>
