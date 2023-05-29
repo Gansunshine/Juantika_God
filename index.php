@@ -113,8 +113,9 @@ $tampil_data = mysqli_query($conn ,$data_tampil);
   <a href="pages/reg-anti-user.php" class="dropdown-item border-radius-md">
     <span>Register</span>
   </a>
-  <a href="pages/sign-in.php" class="dropdown-item border-radius-md">
+  <a href="pages/sign-in.php" onClick="return confirm('Yakin Ingin Logout?')" class="dropdown-item border-radius-md">
     <span>Logout</span>
+  </a>
   </a>
 </div>
         <li class="nav-item dropdown dropdown-hover mx-2">
