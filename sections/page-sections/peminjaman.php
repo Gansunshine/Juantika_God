@@ -15,85 +15,17 @@
   <h3 style="font-family:arial; font-weight: bold; margin: 5px; color: grey;"></h3>
   <a href="../../index.php" style="float: left; text-decoration: none; color: black; font-family: arial; font-weight: 700; margin-top: -30px; margin-right: 8px;"><button class="btn btn-secondary">Back</button></a>
 </div>
-    <!-- Button trigger modal -->
-<center><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Tambah Data Peminjaman
-</button></center>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data </h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!--- Dalam -->
-        <form action="hasil-pinjam.php" method="post">
-      <div class="row g-2">
-  <div class="col">
-  <label for="">Tanggal</label>
-    <input type="date" name="tanggal" class="form-control">
-  </div>
+<div><center>
+<h5>Ingin meminjam barang Inventaris?</h5>
+<h5>Anda Juga Bisa Menghubungi Admin Via:</h5>
+							<a aria-label="Chat on WhatsApp" href="https://wa.link/qkx0pv"><img alt="Chat on WhatsApp" src="wa.png" style="width:200px"></a>
+        </div></center>
 
-  
-  <div class="col">
-  <label for="">Nama Siswa</label>
-    <input type="text" name="n_p" required class="form-control">
-  </div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
 
- 
-  <label for="">Jurusan</label>
-  <select class="form-select" name="jurusan" aria-label="Default select example">
-  <option>--Pilih Jurusan--</option>
-                    <?php 
-                    $koneksi = mysqli_connect("localhost", "root", "", "tekstil");
-
-                    $sql = "SELECT * FROM jurusan";
-                    $hasil = mysqli_query($koneksi,$sql);
-                    while($data = mysqli_fetch_array($hasil)) {
-                        ?>
-                    <option value="<?php echo $data['jurusan']; ?>"><?php echo $data['jurusan']; ?></option>
-                    <?php } ?>  
-</select>
- 
-<label for="">Nama Barang</label>
-<select class="form-select form-select-sm" name="nama" aria-label="Default select example">';
-                    <option>--Pilih Barang--</option>
-                    <?php 
-                   
-                    $koneksi = mysqli_connect("localhost", "root", "", "tekstil");
-
-                    $sql = "SELECT * FROM tabel_barang ORDER BY nama_barang";
-                    $hasil = mysqli_query($koneksi,$sql);
-                    while($data = mysqli_fetch_array($hasil)) {
-                      ?>
-                     <option value="<?=$data['kd_brg'];?>_<?=$data['nama_barang'];?>"><?=$data['nama_barang'];?></option>
-                     <?php  
-                    }    
-                ?>
-                </select>
-
-
-<div class="col">
-  <label for="">Waktu Peminjaman</label>
-    <input type="time" name="w_p" required class="form-control">
-  </div>
-
-  
-  <div class="col">
-  <label for="">Jumlah Pinjam</label>
-    <input type="text" name="jumlah" required class="form-control">
-  </div>
-
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" onClick="document.location.reload(true)" class="btn btn-primary">Simpan</button>
-      </div>
-    </div>
   </div>
   </form>
 </div>
