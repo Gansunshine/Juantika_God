@@ -9,8 +9,9 @@
 
 </head>
 <script src="https://kit.fontawesome.com/f71c921ca4.js" crossorigin="anonymous"></script>
-
 <body>
+    <br>
+    <a href="barang.php" style="float: down; text-decoration: none; color: black; font-family: arial; font-weight: 700; margin-top: -30px; margin-right: 8px;"><button class="btn btn-secondary">Back</button></a>
     <div class="col px-5">
     <form action="">
     <table class="table table-striped table-bordered table-hover " align="center">
@@ -42,12 +43,14 @@
                 <td><?php echo $data['tglpinjam']; ?></td>
                 <td><?php echo $data['tglkembali']; ?></td>
         </tr>
+        
             <?php    
             }
             ?>
     </table>    
         </form>
     </div>
+   
    
 
 </body>

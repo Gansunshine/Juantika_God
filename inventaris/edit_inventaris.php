@@ -47,29 +47,17 @@ if(isset($_POST['ubah'])) {
         <center><h1>Tambah Stok Barang</h1>
         <br>
         <tr>
-        <td>Nama Barang</td>
-        <td>:</td>
-        <td><select class="form-select form-select-sm" name="nb" aria-label="Default select example">
-    <?php
-    $sql = "SELECT * FROM tabel_barang WHERE kd_brg='$kd_brg'";
-    $hasil = mysqli_query($koneksi,$sql);
-    while($data = mysqli_fetch_array($hasil)){
-    ?>
-        <option value="<?php echo $data['nama_barang']; ?>"><?php echo $data['nama_barang']; ?></option>
-    <?php
-        }
-    ?>
-    <?php
-    $sql = "SELECT * FROM tabel_barang";
-    $hasil = mysqli_query($koneksi,$sql);
-    while($data = mysqli_fetch_array($hasil)){
-    ?>
-        <option value="<?php echo $data['nama_barang']; ?>"><?php echo $data['nama_barang']; ?></option>
-    <?php
-        }
-    ?>
-    </select>
-    </tr>
+            <td>NAmBarang</td>
+            <td>:</td>
+            <td><?php $sql = mysqli_query($koneksi, "SELECT * FROM tabel_barang WHERE kd_brg='$kd_brg'");
+            while($data = mysqli_fetch_array($sql)) {
+            ?>
+            <input type="tel" value="<?= $data['nama_barang']; ?>" name="nb">
+            <?php
+            }
+                ?>
+        </td>
+        </tr>
 
     <tr>
             <td>Stock</td>
@@ -93,7 +81,7 @@ if(isset($_POST['ubah'])) {
                     $hasil = mysqli_query($koneksi,$sql);
                     while($data = mysqli_fetch_array($hasil)) {
                         ?>
-                        <option value="<?php echo $data['kate_brg']; ?>"><?php echo $data['kate_brg']; ?></option>
+                        <option value="<?php echo $data['id']; ?>"><?php echo $data['kate_brg']; ?></option>
                     <?php    
                     }
                     ?>

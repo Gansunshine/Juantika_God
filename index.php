@@ -199,6 +199,7 @@ $tampil_data = mysqli_query($conn ,$data_tampil);
       <option value="Hadir">Hadir</option>
       <option value="Izin">Izin</option>
       <option value="Sakit">Sakit</option>
+      <option value="Sakit">Alpa</option>
     </select>
   </div>
   <div class="col-12">

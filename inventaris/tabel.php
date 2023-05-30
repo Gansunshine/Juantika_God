@@ -9,7 +9,9 @@
 <script src="https://kit.fontawesome.com/f71c921ca4.js" crossorigin="anonymous"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
 <body>
+    <div class="col px-5">
     <form action="">
     <table class="table table-striped table-bordered table-hover" align="center">
         <tr>
@@ -50,7 +52,7 @@
             ?>
     </table>
         </form>
-
+        </div>
 </body>
 </html>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -134,6 +134,19 @@ if(isset($_POST['ubah'])) {
     </tr>
 
     <tr>
+        <td>Tanggal Peminjaman</td>
+        <td>:</td>
+        <td><?php 
+            $sql = "SELECT * FROM barang WHERE kode_brg='$kd_brg'";
+            $hasil = mysqli_query($koneksi,$sql);
+            while($data = mysqli_fetch_array($hasil)) {
+                ?>
+            <input type="date" value="<?php echo $data['tanggal_p']; ?>" name="tgl" >
+        
+        <?php } ?></td>
+    </tr>
+
+    <tr>
         <td>Jumlah Barang</td>
         <td>:</td>
         <td><?php 

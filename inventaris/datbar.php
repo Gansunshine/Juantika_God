@@ -17,7 +17,7 @@ $koneksi = mysqli_connect("localhost","root","","tekstil");
   <a href="../admin.php" style="float: left; text-decoration: none; color: black; font-family: arial; font-weight: 700; margin-top: -30px; margin-right: 8px;"><button class="btn btn-secondary">Back</button></a>
 </div>
 <br>
-<form action="hasil_dabar.php" method="post" class="f">
+<form action="hasil_dabar.php" method="post" class="">
         <table  align="center" class="tab">
             <tr>
                 <td>Nama Barang</td>
@@ -41,7 +41,7 @@ $koneksi = mysqli_connect("localhost","root","","tekstil");
                     $hasil = mysqli_query($koneksi,$sql);
                     while($data = mysqli_fetch_array($hasil)) {
                         ?>
-                        <option value="<?php echo $data['kate_brg']; ?>"><?php echo $data['kate_brg']; ?></option>
+                        <option value="<?php echo $data['id']; ?>"><?php echo $data['kate_brg']; ?></option>
                     <?php    
                     }
                     ?>
@@ -54,6 +54,7 @@ $koneksi = mysqli_connect("localhost","root","","tekstil");
             </tr>
         </table>
                 </div>
+                
     </form>
    
         <div>
