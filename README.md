@@ -1,12 +1,12 @@
 ## Project Juantika Absen
 Project ini dibuat berdasarkan kebutuhan ekstrakuikuller Pramuka di SMKN 1 Katapang
-Juantika Absen ini merupakan project Ujikom yang dapat melakukan sistem mendata Absensi serta dapat melakukan peminjaman Inventaris berbasis Website.
+Juantika Absen ini merupakan project Ujikom yang dapat melakukan sistem mendata Absensi serta dapat melakukan peminjaman Inventaris berbasis Website. Tujuan dibuatnya Website ini tiada lain untuk mempermudah sistem absensi yang masih sederhana menjadi berbasis Website.
 
 ## Fitur
-Fitur Peminjaman inventaris 
-Fitur Absensi 
-Fitur Print data Absensi
-Fitur Chat Admin via Whatsapp
+- Fitur Peminjaman inventaris 
+- Fitur Absensi  
+- Fitur Print data Absensi
+- Fitur Chat Admin via Whatsapp
 
 ## Tools
 website ini dibuat dengan bahasa pemograman:
